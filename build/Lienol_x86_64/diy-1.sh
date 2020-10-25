@@ -8,7 +8,7 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/diy/luci-app
 git clone https://github.com/garypang13/luci-app-eqos.git package/diy/luci-app-eqos  #内网IP限速工具
 git clone https://github.com/jerrykuku/node-request.git package/diy/node-request  #京东签到依赖
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/diy/luci-app-jd-dailybonus  #京东签到
-
+git clone https://github.com/skylovebeauty/luci-app-switch-lan-play.git package/diy/luci-app-switch-lan-play  #switch-lan-play
 #增加LEDE的ShadowSocksR Plus+出国软件 (源码自带passwall出国软件)
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/shadowsocksr-libev package/diy/shadowsocksr-libev
