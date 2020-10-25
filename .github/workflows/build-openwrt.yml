@@ -51,7 +51,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [Project_x86_64]  #[Lede_x86_64,Lede_redmi_ac2100,Lede_newifi_d2,Lede_nanopi_r2s,Lede_phicomm_k2p,Lienol_x86_64,Lienol_phicomm_k2p,Lienol_phicomm_k3,Project_x86_64,Project_newifi_d2,Project_phicomm_k3,Project_nanopi_r2s]
+        target: [Lienol_x86_64]  #[Lede_x86_64,Lede_redmi_ac2100,Lede_newifi_d2,Lede_nanopi_r2s,Lede_phicomm_k2p,Lienol_x86_64,Lienol_phicomm_k2p,Lienol_phicomm_k3,Project_x86_64,Project_newifi_d2,Project_phicomm_k3,Project_nanopi_r2s]
 
     steps:
     - name: 准备结束
@@ -255,7 +255,7 @@ jobs:
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: steps.organizer.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true'
       with:
-        keep_latest: 12         #保留多少个发布不删除
+        keep_latest: 2         #保留多少个发布不删除
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
